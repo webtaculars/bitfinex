@@ -4,7 +4,16 @@ import Colors from "../../theme";
 export default StyleSheet.create({
   container: {
     padding: 10,
-    backgroundColor: "#19272e",
+    backgroundColor: Colors.primaryBackgroundColor,
+    flexDirection: "row",
+  },
+  iconContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  dataContainer: {
+    flex: 1,
+    marginLeft: 10,
   },
   rowContainer: {
     flexDirection: "row",
@@ -32,5 +41,10 @@ export default StyleSheet.create({
   volumeUnit: {
     textDecorationLine: "underline",
     textDecorationColor: Colors.primarytext,
+  },
+  iconStyle: { color: Colors.lighter, fontSize: 26 },
+  caretIcon: {
+    fontSize: 14,
+    alignSelf: "center",
   },
 });

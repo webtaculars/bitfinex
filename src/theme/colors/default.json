@@ -1,6 +1,10 @@
 {
+  "primaryBackgroundColor": "#19272e",
   "primarytext": "#ffffff",
   "secondaryText": "#c0c0c0",
   "valueIncreasedText": "#01a781",
-  "valueDecreasedText": "#f05359"
+  "valueDecreasedText": "#f05359",
+  "lighter": "#c0c0c0",
+  "darker": "#2c2c2c",
+  "primaryDark": "#000000"
 }

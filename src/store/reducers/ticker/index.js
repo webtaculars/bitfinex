@@ -6,6 +6,7 @@ import {
 const intialState = {
   channelId: null,
   data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  isLoading: true,
 };
 
 const reducer = (state = intialState, action) => {
@@ -14,6 +15,7 @@ const reducer = (state = intialState, action) => {
       return {
         ...state,
         channelId: action.channelId,
+        isLoading: false,
       };
     case UPDATE_TICKER_DATA:
       if (action.data && action.data[0] !== "hb") {
@@ -22,10 +24,7 @@ const reducer = (state = intialState, action) => {
           data: action.data[0],
         };
       }
-      return {
-        ...state,
-      };
-
+      return state;
     default:
       return state;
   }
