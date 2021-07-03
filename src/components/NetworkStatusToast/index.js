@@ -6,7 +6,7 @@ export default class NetworkStatusToast extends PureComponent {
   render() {
     return (
       <View style={styles.container}>
-        <Text>No Internet Connection</Text>
+        <Text style={styles.text}>No Internet Connection</Text>
       </View>
     );
   }

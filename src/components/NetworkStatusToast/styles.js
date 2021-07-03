@@ -11,4 +11,7 @@ export default StyleSheet.create({
     width: "95%",
     bottom: 150,
   },
+  text: {
+    color: Colors.primarytext,
+  },
 });
