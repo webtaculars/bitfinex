@@ -75,7 +75,7 @@ class TradesContainer extends Component {
     return (
       <>
         <FlatList
-          data={tradesData}
+          data={tradesData.slice(0, 30)}
           renderItem={this.renderItem}
           ListHeaderComponent={this.headerComponent}
           contentContainerStyle={styles.tradeDataList}
